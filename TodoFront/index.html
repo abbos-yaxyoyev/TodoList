@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container-input w-100">
+            <form class="first-form">
+                <input class="w-100" id="input" type="text" placeholder="todoList" required="required"><!--
+            --><button><i class="fas fa-2x fa-plus"></i></button>
+            </form>
+            <div class="select">
+               <select class="filter-todo" id="filter">
+                  <option value="completed">Completed</option>
+                  <option value="uncompleted" selected>Uncompleted</option>
+                </select>
+            </div>
+        </div>
+        <div class="container-output">
+            <ul id="ul" class="ul-list"></ul>
+            <ul class="ul-checked"></ul>
+         </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

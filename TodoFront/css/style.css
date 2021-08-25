@@ -1,0 +1,153 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  color: #000;
+  background: linear-gradient(to right, #00aaff, rgba(25, 255, 25, 0.6));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Bree Serif", Railvey sans-serif;
+  margin: 0;
+}
+
+.cf::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.container-input {
+  display: flex;
+  justify-content: space-between;
+}
+.first-form {
+  display: flex;
+  justify-content: row;
+  width: 60%;
+}
+.select {
+  width: 25%;
+  display: flex;
+  justify-self: row-reverse;
+}
+.select > select {
+  font-size: 18px;
+  padding: 10px 15px;
+  margin-left: auto;
+}
+
+.first-form > input {
+  outline: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  margin-left: auto;
+}
+
+input:focus {
+  border: 1px solid blue;
+}
+
+.first-form > button {
+  width: 10%;
+  outline: none !important;
+}
+form > button {
+  background-color: #f00;
+  color: #fff;
+}
+/*================================================================*/
+.container-output {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+.ul-list,
+.ul-checked {
+  width: 48%;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+  background-color: bisque;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+li + li {
+  margin-top: 5px;
+}
+li > p {
+  width: 80%;
+  font-size: 18px;
+  padding: 5px 10px !important;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  min-height: 36px;
+  transition: all 1s ease;
+}
+li > section {
+  display: flex;
+  justify-content: row;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+section > button {
+  height: 100%;
+}
+section > button:first-child {
+  background-color: #0f0;
+}
+section > button:last-child {
+  background-color: #f00;
+}
+section > button > .fas {
+  color: #fff;
+  pointer-events: none;
+}
+
+/*=====================================================================*/
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}
