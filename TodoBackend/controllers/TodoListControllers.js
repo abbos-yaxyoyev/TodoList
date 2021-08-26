@@ -1,4 +1,4 @@
-const { getUsers, postCreatUser, getId, deletModulUser, putModulUser } = require('../models/productModules');
+const { getUsers, postCreatUser, getId, deletModulUser, putModulUser } = require('../models/TodoListModules');
 const { getUserData } = require('../utils/utils');
 
 async function getAllUsers(req, res) {

@@ -122,10 +122,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     todoBoolen = false;
                 }
             })
-            console.log(todoBoolen);
+            console.log(todoList.children > 0);
 
-            if (todoBoolen) {
-                console.log(todo);
+            if (todoBoolen && todoList.children.length > 0) {
 
                 if (todo.classList.contains("completed")) {
                     todoList.innerHTML += `<li id="${todo.id}" class="completed">
